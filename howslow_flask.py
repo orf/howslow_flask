@@ -60,7 +60,7 @@ def index():
                                    "profile": output.getvalue()}
 
     return render_template("results.html", results=returner, platform={
-        "django_version": flask.__version__,
+        "flask_version": flask.__version__,
         "python_version": platform.python_version(),
         "platform": platform.platform(),
         "debug": app.debug
